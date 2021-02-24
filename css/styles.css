@@ -1,16 +1,175 @@
-.contenedor{
-    height: 30.2em;
-    width: 50em;
+
+.perfilExterior{
+    height: 30em;
+    width: 80em;
     display: flex;
     flex-direction: row;
 
-    background-color: aqua;
+    background-color: silver;
+}
+.extremo{
+    height: 30em;
+    width: 20em;
+    background-color: skyblue;
 }
 
-.contenido{
+
+.extremoIzquiedo{
+    display: flex;
+    flex-direction: column;
+    border-radius: 50% 0 0 50%;
+    background-color: saddlebrown;
+}
+.extremoSuperior{
+    height: 2em;
+    width: 20em;
+    display: flex;
+    flex-direction: row;
+}
+.parteIzquierda{
+    height: 2em;
+    width: 5em;
+}
+.bordeBotonL1{
+    height: 2em;
+    width: 5em;
+    background-color:slateblue;
+
+    border-radius: 100% 0 0 0;
+}
+.partederecha{
+    height: 2em;
+    width: 4em;
+    background-color:slateblue;
+
+    border-radius: 0 0 100% 0;
+}
+.rellenoBotonL1{
+    height: 2em;
+    width: 2em;
+    background-color:slateblue;
+}
+.espacioVacioVertical{
+    height: 1em;
+    width: 20em;
+}
+.espacioLogoPSP{
+    height: 2em;
+    width: 10em;
+    display: flex;
+    flex-direction: row;
+}
+.logoPSP{
+    height: 2em;
+    width: 2em;
+    background-color:olive;
+}
+.rellenoLogoPSP{
+    height: 2em;
+    width: 6em;
+}
+
+.espacioPantallaBotonR1{
+    height: 2em;
+    width: 4em;
+}
+.bordeBotonL1{
+    height: 2em;
+    width: 5em;
+    background-color:slateblue;
+
+    border-radius: 100% 0 0 0;
+}
+.bordeBotonR1{
+    height: 2em;
+    width: 5em;
+    background-color:slateblue;
+    border-radius: 0 100% 0 0;
+}
+.interiorBotonR1{    
+    height: 2em;
+    width: 4em;
+    background-color:slateblue;
+
+    border-radius:0 0 0 100%;
+}
+.espacioLogoSONY{
+    height: 2em;
+    width: 10em;
+    display: flex;
+    flex-direction: row;
+}
+.rellenoLogoSONY{
+    height: 2em;
+    width: 2em;
+}
+.logoSONY{
+    height: 2em;
+    width: 8em;
+    background-color:olive;
+}
+
+.altavozIzquierdo{
+    height: 2em;
+    width: 20em;
+    display: flex;
+    flex-direction: row;
+}
+
+.espacioAltavozIzquierdo{
+    height: 2em;
+    width: 13em;
+}
+.altavoz{    
+    height: 2em;
+    width: 4em;
+    background-color: black;
+    border-radius: 40% 40% 40% 40%;
+}
+.altavozDerecho{    
+    height: 2em;
+    width: 20em;
+    display: flex;
+    flex-direction: row;
+}
+.espacioAltavozDerecho{
+    height: 2em;
+    width: 3em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.centro{
     height: 30em;
-    width: 15em;
-    border: solid;
-    border-width: 0.1em;
-    border-color: black;
+    width: 40em;
+    background-color:steelblue;
+
+}
+
+
+.extremoDerecho{
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 50% 50% 0;
+    background-color: saddlebrown;
 }
