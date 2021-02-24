@@ -1,0 +1,16 @@
+.contenedor{
+    height: 30.2em;
+    width: 50em;
+    display: flex;
+    flex-direction: row;
+
+    background-color: aqua;
+}
+
+.contenido{
+    height: 30em;
+    width: 15em;
+    border: solid;
+    border-width: 0.1em;
+    border-color: black;
+}
