@@ -1,24 +1,23 @@
-
+/*#region exterior*/
 .perfilExterior{
     height: 30em;
     width: 80em;
     display: flex;
     flex-direction: row;
-
-    background-color: silver;
 }
+/*#endregion*/
+
 .extremo{
     height: 30em;
     width: 20em;
-    background-color: skyblue;
+    background-color: darkgray;
 }
-
-
 .extremoIzquiedo{
     display: flex;
     flex-direction: column;
     border-radius: 50% 0 0 50%;
-    background-color: saddlebrown;
+    background-color: darkgray;
+    border-left: 0.5em  solid gray;
 }
 .extremoSuperior{
     height: 2em;
@@ -33,21 +32,21 @@
 .bordeBotonL1{
     height: 2em;
     width: 5em;
-    background-color:slateblue;
+    background-color:LightGray;
 
     border-radius: 100% 0 0 0;
 }
 .partederecha{
     height: 2em;
     width: 4em;
-    background-color:slateblue;
+    background-color:LightGray;
 
     border-radius: 0 0 100% 0;
 }
 .rellenoBotonL1{
     height: 2em;
     width: 2em;
-    background-color:slateblue;
+    background-color:LightGray;
 }
 .espacioVacioVertical{
     height: 1em;
@@ -62,13 +61,14 @@
 .logoPSP{
     height: 2em;
     width: 2em;
-    background-color:olive;
+}
+.imgLogoPlay{
+    height: 2em;
 }
 .rellenoLogoPSP{
     height: 2em;
     width: 6em;
 }
-
 .espacioPantallaBotonR1{
     height: 2em;
     width: 4em;
@@ -76,26 +76,26 @@
 .bordeBotonL1{
     height: 2em;
     width: 5em;
-    background-color:slateblue;
+    background-color:LightGray;
 
     border-radius: 100% 0 0 0;
 }
 .bordeBotonR1{
     height: 2em;
     width: 5em;
-    background-color:slateblue;
+    background-color:LightGray;
     border-radius: 0 100% 0 0;
 }
 .interiorBotonR1{    
     height: 2em;
     width: 4em;
-    background-color:slateblue;
+    background-color:LightGray;
 
     border-radius:0 0 0 100%;
 }
 .espacioLogoSONY{
     height: 2em;
-    width: 10em;
+    width: 20em;
     display: flex;
     flex-direction: row;
 }
@@ -105,8 +105,10 @@
 }
 .logoSONY{
     height: 2em;
-    width: 8em;
-    background-color:olive;
+    width: 10em;
+    font-weight: bolder;
+    color:dimgray;
+    font-size: 2em;
 }
 
 .altavozIzquierdo{
@@ -123,8 +125,20 @@
 .altavoz{    
     height: 2em;
     width: 4em;
+    display: flex;
+    flex-direction: row;
+}
+.bordeCicularIzq{
+    height: 1em;
+    width: 1em;
+    border-radius: 50% 0 0 50%;
     background-color: black;
-    border-radius: 40% 40% 40% 40%;
+}
+.bordeCircularDer{
+    height: 1em;
+    width: 1em;
+    border-radius: 0 50% 50% 0;
+    background-color: black;
 }
 .altavozDerecho{    
     height: 2em;
@@ -136,40 +150,695 @@
     height: 2em;
     width: 3em;
 }
+.botonesDireccionales{
+    height: 12em;
+    width: 30em;
+    display: flex;
+    flex-direction: row;
+}
+
+.flechas{
+    height: 12em;
+    width: 12em;
+    background-color: darkgray;
+    border-radius: 50%;
+    border:dimgray 0.1em solid;
+}
+.zonaJoystick{
+    height: 4em;
+    width: 30em;
+    display: flex;
+    flex-direction: row;
+}
+.espaciojoystick{
+    height: 4em;
+    width: 8em;
+}
+.joystick{
+    height: 4em;
+    width: 4em;
+    background-color: gray;
+    border-radius: 50%;
+}
+
+.extremoInferior{
+    height: 2em;
+    width: 30em;
+    display: flex;
+    flex-direction: row;
+}
+.espacioSujecion{
+    height: 2em;
+    width: 5.4em;
+}
+.interiorSujecion{
+    height: 2em;
+    width: 5em;
+    background-color:white;
+    box-sizing:border-box;
+    border-top: 0.2em dimgray solid;
+    border-left: 0.5em dimgray solid;
+    border-bottom: 0.5em dimgray solid;
+    border-radius: 20% 0 0 100%;
+}
+.bordeSujecion{
+    height: 2em;
+    width: 5em;
+    background-color:white;
+    box-sizing:border-box;
+    border-top: 0.2em dimgray solid;
+    border-right: 0.5em dimgray solid;
+    border-bottom: 0.5em dimgray solid;
+    border-radius: 0 100% 20% 0;
+}
+
+.rellenoSujecion{
+    height: 2em;
+    width: 1em;
+    background-color:white;
+    box-sizing:border-box;
+    border-top: 0.2em dimgray solid;
+    border-bottom: 0.5em dimgray solid;
+}
 
 
+.zonaVacia{
+    height: 2em;
+    width: 20em;
+    display: flex;
+    flex-direction: row;
+}
+.espacioIzquierdo{
+    height: 2em;
+    width: 4em;
+}
+.bordeVacio{
+    height: 2em;
+    width: 5em;
+    background-color:white;
 
+    border-radius: 100% 0 0 0;
+}
+.partederechaVacio{
+    height: 2em;
+    width: 4em;
+    background-color:white;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    border-radius: 0 0 100% 0;
+}
+.rellenoVacio{
+    height: 2em;
+    width: 2.5em;
+    background-color:white;
+}
 
 
 .centro{
     height: 30em;
     width: 40em;
-    background-color:steelblue;
-
+    background-color:darkgray;
+    display: flex;
+    flex-direction: column;
+}
+.bordeSuperiorPantalla{
+    height: 2em;
+    width: 40em;
+    background-color: darkgray;
+}
+.outset{
+    height: 2em;
+    width: 5em;
+    background-color: darkgray;
+}
+.pantalla{
+    height: 25em;
+    width: 39em;
+    background-color: black;
+    border-radius: 1%;
+    border:gray double 0.1em;
+}
+.bordeInferiorPantalla{
+    height: 3em;
+    width: 40em;
+    background-color: darkgray;
+    display: flex;
+    flex-direction: row;
 }
 
+
+
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
+/*        ZONA botones inferiores      */
+/*-------------------------------------*/
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
+/*#region botones inferiore*/
+
+.textoBtnHome{
+    font-size: 0.6em;
+    color: dimgray;
+}
+.botonHome{
+    height: 2.7em;
+    width: 3.5em;
+    background-color: gray;
+    border-radius: 0 0 100% 100%;
+    display: flex;
+    flex-direction: column;
+}
+.espacioSuperiorBotonHome{
+    height: 1.5em;
+    width: 4em;
+    background-color: darkgray;
+}
+.espacioLateral{
+    height: 3em;
+    width: 1em;
+}
+.contenedorBotonOvalado{    
+    height: 3em;
+    width: 1.6em;
+    display: flex;
+    flex-direction: column;
+}
+.botonOvalo{
+    display: flex;
+    flex-direction: row;
+}
+.bordeCircularIz{
+    height: 1em;
+    width: 0.8em;
+    background-color: gray;
+    border-radius: 50% 0 0 50%;
+    display: flex;
+    flex-direction: row;
+}
+.espaciosignoMenos{
+    height: 1em;
+    width: 0.55em;
+}
+.signoMenos{
+    height: 0.5em;
+    width: 0.25em;
+    border-bottom: 0.1em dimgray solid;
+}
+.bordeCircularDe{    
+    height: 1em;
+    width: 0.8em;
+    background-color: gray;
+    border-radius: 0 50% 50% 0;
+    display: flex;
+    flex-direction: row;
+}
+.espaciotextoVol{
+    height: 3em;
+    width: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.textoVol{    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 0.2em;
+    color: dimgray;
+}
+.espacioBajoTexto{
+    height: 0.7em;
+}
+/*#endregion*/
+
+
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
+/*           ZONA SIGLA PSP            */
+/*-------------------------------------*/
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
+/*#region sigla psp*/
+.espacioCentral{
+    height: 3em;
+    width: 16em;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-end;
+}
+.siglaP{
+    height: 3em;
+    width: 3em;
+    display: flex;
+    flex-direction: column;
+}
+.areaSiglaS{
+    height: 3em;
+    width: 3em;
+    display: flex;
+    flex-direction: column;
+}
+.espacioSuperiorSigla{
+    height: 0.8em;
+    width: 3em;
+}
+.siglaPSuperior{
+    height: 0.8em;
+    width: 2.8em;
+    border-top: 0.2em solid gray;
+    border-right: 0.2em solid gray;
+    border-bottom: 0.2em solid gray;
+    box-sizing:border-box;
+}
+.siglaPInferior{    
+    height: 0.8em;
+    width: 2.8em;
+    border-left: 0.2em solid gray;
+    box-sizing:border-box;
+}
+
+.siglaS{
+    height: 1.6em;
+    width: 2.8em;
+    display: flex;
+    flex-direction: row;
+}
+.siglaSIz{
+    height: 1.6em;
+    width: 1.4em;
+    border-bottom: 0.2em solid gray;
+    border-right: 0.1em solid gray;
+    box-sizing:border-box;
+}
+.siglaSDe{
+    height: 1.6em;
+    width: 1.4em;
+    border-top: 0.2em solid gray;
+    border-left: 0.1em solid gray;
+    box-sizing:border-box;
+}
+
+
+
+/*#endregion*/
 
 .extremoDerecho{
     display: flex;
     flex-direction: column;
     border-radius: 0 50% 50% 0;
-    background-color: saddlebrown;
+    background-color: darkgray;    
+    border-right: 0.5em  solid gray;
 }
+.zonaSuperiorBotonesFlecha{
+    display: flex;
+    flex-direction: row;
+    height: 3em;
+    width: 12em;
+}
+.espacioEntreBotones{
+    height: 4em;
+    width: 4em;
+}
+.botonFlechaArribaCurva{
+    height: 1em;
+    width: 4em;
+    background-color: gray;
+    border-radius: 100% 100% 0 0;
+}
+.botonFlechaArriba{
+    height: 4em;
+    width: 4em;
+    display: flex;
+    flex-direction: column;
+}
+.rellenoBotonFlechaArriba{
+    height: 2em;
+    width: 4em;
+    background-color: gray;
+}
+.zonaMediaBotonesFlecha{
+    display: flex;
+    flex-direction: row;
+    height: 4em;
+    width: 12em;
+}
+.botonFlechaIz{    
+    height: 4em;
+    width: 1em;
+    background-color: gray;
+    border-radius: 100% 0 0 100%;
+}
+.rellenoBotonFlechaIz{
+    height: 4em;
+    width: 2em;
+    background-color: gray;
+}
+.espacioEntreFlechas{
+    height: 1em;
+    width: 12em;
+    display: flex;
+    flex-direction: row;
+}
+.espacioEntreBotonesHorizontales{
+    height: 4em;
+    width: 6em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.botonFlechaDE{
+    height: 4em;
+    width: 1em;
+    background-color: gray;
+    border-radius:0 100% 100% 0;
+}
+.zonaInferiorBotonesFlecha{
+    display: flex;
+    flex-direction: row;
+    height: 3em;
+    width: 12em;
+}
+.botonFlechaAbajo{
+    display: flex;
+    flex-direction: column;
+    height: 3em;
+    width: 4em;
+}
+.botonFlechaAbajoCurva{
+    height: 1em;
+    width: 4em;
+    background-color: gray;
+    border-radius:0 0 100% 100%;
+}
+.trianguloAbajo{
+    height: 0;
+    width: 0;
+    border-top: 2em solid gray;
+    border-left: 2em solid transparent;
+    border-right: 2em solid transparent;
+}
+.espacioEntreFlechasBajo{
+    height: 1em;
+    width: 12em;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.trianguloArriba{    
+    height: 0;
+    width: 0;
+    border-bottom: 2em solid gray;
+    border-left: 2em solid transparent;
+    border-right: 2em solid transparent;
+}
+.trianguloDerecha{
+    height: 0;
+    width: 0;
+    border-left: 2em solid gray;
+    border-top: 2em solid transparent;
+    border-bottom: 2em solid transparent;
+}
+.trianguloIzquierda{
+    height: 0;
+    width: 0;
+    border-right: 2em solid gray;
+    border-top: 2em solid transparent;
+    border-bottom: 2em solid transparent;
+}
+
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
+/*        ZONA BOTONES DE ACCION       */
+/*-------------------------------------*/
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
+/*#region botones de accion*/
+    .espacioBotonesDirecionales{
+        height: 9em;
+        width: 5em;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .espacioVacioVerticalBotonesXYZ{
+        height: 2em;
+        width: 20em;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+    .espacioSemiCirculo{
+        height: 2em;
+        width: 8em;
+    }
+    .semicirculoIzquierda{
+        width: 1.5em; 
+        height: 3em; 
+        background: gray;
+        border-radius: 3em 0 0 3em ;
+        display: flex;
+        flex-direction: row;   
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .semiCirculoInterior{
+        width: 0.7em; 
+        height: 1.4em; 
+        background: gray;
+        border-radius: 1.4em 0 0 1.4em ;
+        border-top:dimgray solid 0.1em;
+        border-bottom:dimgray solid 0.1em;
+        border-left:dimgray solid 0.1em;
+        display: flex;
+        flex-direction: row;   
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .semiCirculoInteriorDe{
+        width: 0.7em; 
+        height: 1.4em; 
+        background: gray;
+        border-radius: 0 1.4em 1.4em 0;
+        border-top:dimgray solid 0.1em;
+        border-bottom:dimgray solid 0.1em;
+        border-right:dimgray solid 0.1em;
+        display: flex;
+        flex-direction: row;   
+        justify-content: flex-end;
+        align-items: center;
+
+    }
+    .botonCuadradoIz{
+        height: 1.5em;
+        width: 0.75em;
+        background-color: dimgray;
+        display: flex;
+        flex-direction: row;   
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .botonCuadradoDe{
+        height: 1.5em;
+        width: 0.75em;
+        background-color: dimgray;
+        display: flex;
+        flex-direction: row;   
+        align-items: center;
+    }
+    .interiorCuadrado{
+        height: 1.3em;
+        width: 0.6em;
+        background-color: gray;
+    }
+    .semicirculoDerecha{
+        width: 1.5em; 
+        height: 3em; 
+        background: gray;
+        border-radius: 0 3em 3em 0;
+        display: flex;
+        flex-direction: row;   
+        justify-content: flex-start;
+        align-items: center;        
+        z-index: 2;
+    }
+    .circuloInternoBotonesAccion{
+        width: 9em;
+        height: 9em;
+        background-color: darkgray;
+        border:dimgray 0.1em solid;
+        box-sizing: border-box;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 1;
+    }
+    .espacioSemiCirculo2{
+        height: 9em;
+        width: 3em;
+        display: flex;                
+        z-index: 2;
+    }
+    #btnCuadrado{
+        align-items: center;
+    }
+    #interiorBotones{
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+    #botonCirculoIz{
+        align-items: center;
+        justify-content: flex-end;
+    }
+    #btnXSuperior{
+        align-items: center;
+        justify-content: space-around;        
+        z-index: 2;
+    }
+    .xSuperior{
+        height: 1em;
+        width: 1em;
+        transform: rotate(45deg);
+        border-bottom:dimgray 0.1em solid;
+        border-right: dimgray 0.1em solid;
+    }
+    .botonXInferior{
+        height: 2em;
+        width: 20em;
+        display: flex;
+        flex-direction: row;
+    }
+    .espacioBotonX{
+        height: 3em;
+        width: 8em;
+    }
+    .xInferior{
+        height: 1em;
+        width: 1em;
+        transform: rotate(45deg);
+        border-top:dimgray 0.1em solid;
+        border-left: dimgray 0.1em solid;
+    }
+    .botonesDeAccion{
+        height: 11em;
+        width: 20em;
+        display: flex;
+        flex-direction: row;
+    }
+    .contenedorBotonCirculoDe{
+        height: 9em;
+        display: flex;
+        align-items: center;
+    }
+    .botonesFiguras{
+        height: 9em;
+        width: 9em;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    /*         ZONA BOTON TRIANGULO        */
+    /*-------------------------------------*/
+    /*#region boton triangulo*/
+
+    .semiCirculo {
+        width: 3em; 
+        height: 1.5em; 
+        border-radius: 3em 3em 0 0;
+        background-color: gray;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+    .espacioBotonTriangulo{
+        height: 1.5em;
+        width: 1.1em;
+    }
+    .semiCirculoArriba{
+        width: 3em; 
+        height: 1.5em; 
+        background: gray;
+        border-radius: 0 0 3em 3em;
+        display: flex;
+        flex-direction: row;   
+        z-index: 2;
+    }
+    #btnXInferior{
+        justify-content: space-around;
+        align-items: center;
+    }
+    .botonTriangulo{
+        height: 0;
+        width: 0;
+        border-bottom: 0.7em solid dimgray;
+        border-left: 0.4em solid transparent;
+        border-right: 0.4em solid transparent;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .rellenoBotonTriangulo{
+        height: 1em;
+        width: 0.7em;
+    }
+    .botonTrapecio{
+        height: 0;
+        width: 0.8em;
+        border-bottom: 0.7em solid dimgray;
+        border-left: 0.4em solid transparent;
+        border-right: 0.4em solid transparent;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 2;
+    }
+    .ubicacionTrianguloInterior{
+        height: 0.1em;
+        width: 0;
+    }
+    .trianguloInterior{    
+        height: 0;
+        width: 0;
+        border-left: 0.5em solid transparent;
+        border-right: 0.5em solid transparent;
+        border-bottom: 0.8em solid gray;
+    }
+
+    /*#endregion*/
+
+
+/*#endregion*/
+
+
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
+/*          ZONA LEDS DERECHOS         */
+/*-------------------------------------*/
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
+/*#region leds derechos*/
+    .espacioverticalLets{
+        height: 1em;
+        width: 20em;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .espacioTextoPower{
+        height: 1em;
+        width: 13.5em;
+    }
+    .textoPower{
+        color: dimgray;
+    }
+    .let{
+        margin-left: 0.5em;
+        height: 0.4em;
+        width: 0.4em;
+        border-radius: 50%;
+        background-color: dimgray;
+    }
+    .espacioTextoHold{
+        height: 1em;
+        width: 13em;
+    }
+/*#endregion*/
+
+
+
+
+
