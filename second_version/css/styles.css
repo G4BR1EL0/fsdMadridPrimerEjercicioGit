@@ -24,7 +24,8 @@ body{
     flex-direction: column;
     border-radius: 50% 0 0 50%;
     background-color: darkgray;
-    border-left: 0.5em  solid gray;
+    box-shadow: inset 10px 0 10px -7px rgba(0,0,0,0.4);
+    /* border-left: 0.5em  solid gray; */
 }
 .extremoSuperior{
     height: 2em;
@@ -450,7 +451,7 @@ body{
     flex-direction: column;
     border-radius: 0 50% 50% 0;
     background-color: darkgray;    
-    border-right: 0.5em  solid gray;
+    box-shadow: inset -10px 0 10px -7px rgba(0,0,0,0.4);
 }
 .zonaSuperiorBotonesFlecha{
     display: flex;
@@ -846,6 +847,114 @@ body{
 /*#endregion*/
 
 
+.zona-botones-accion{
+    display: flex;
+    flex-direction: column;
 
+}
+
+.contenedor-botones-accion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 10em;
+    width: 10em;
+}
+.primera-fila{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.segunda-fila{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.tecera-fila{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.contenedor-aro{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.aro{
+    position: absolute;
+    z-index: 0;
+    height: 7.5em;
+    width: 7.5em;
+    border-radius: 50%;
+    box-shadow: 0.75px 0.75px 1px rgba(0,0,0,0.4),
+                0 0 0 0.75px rgba(255,255,255,0.3),
+                0 0 0 1.75px darkgrey,
+                0.25px 0.25px 2.5px 2px rgba(255,255,255,0.4),
+                0 0 0 2.5px grey;
+}
+.circulo{    
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 2.5em;
+    height: 2.5em;
+    background-color: grey;
+    border-radius: 50%;
+    box-shadow: 2.5px 2.5px 3.75px rgba(0,0,0,0.2), 
+                inset 1.25px 1.25px 1.25px rgba(255,255,255,0.2), 
+                inset -1.25px -1.25px 1.25px rgba(0,0,0,0.1);
+}
+.triangulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0;
+    width: 0;
+    border-bottom: 1.25em solid rgba(0,0,0,0.2);
+    border-left: 0.625em solid transparent;
+    border-right: 0.625em solid transparent;
+}
+.triangulo-interior{
+    position: relative;
+    top: 0.645em;
+    height: 0;
+    width: 0;
+    border-bottom: 1.15em solid grey;
+    border-left: 0.575em solid transparent;
+    border-right: 0.575em solid transparent;
+}
+.cuadrado{
+    height: 1.125em;
+    width: 1.125em;
+    border: 0.0625em solid rgba(0,0,0,0.2);
+}
+.cuadrado2{
+    position: relative;
+    top: -0.125em;
+    height: 0.625em;
+    width: 0.625em;
+    border-bottom: 0.0625em solid rgba(0,0,0,0.2);
+    border-right: 0.0625em solid rgba(0,0,0,0.2);
+    transform: rotate(45deg);
+}
+.cuadrado3{
+    position: relative;
+    top: 0.1em;
+    height: 0.625em;
+    width: 0.625em;
+    border-left: 0.05em solid rgba(0,0,0,0.2);
+    border-top: 0.05em solid rgba(0,0,0,0.2);
+    transform: rotate(45deg);
+}
+.redondo{
+    border-radius: 50%;
+    height: 1.25em;
+    width: 1.25em;
+    border: 0.05em solid rgba(0,0,0,0.2);
+}
 
 
